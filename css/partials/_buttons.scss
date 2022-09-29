@@ -1,0 +1,89 @@
+.btn .btn-1 {
+    padding: 12px 64px ;
+    display: inline-block;
+    color: $white-color;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Equinox', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    transition: 0.2s;
+    text-decoration: none;
+
+    border: 1px solid $orange-color2;
+    &:hover {
+        background-color: $orange-color2;
+        box-shadow: 0px 4px 17px 1px rgba(204, 91, 46, 0.245);
+        transition-delay: 1s;
+        
+        font-weight: bold;
+    }
+    
+
+}
+.btn-1 span {
+    position: absolute;
+    display: block;
+
+}
+.btn-1 span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, $orange-color);
+
+}
+.btn-1:hover span:nth-child(1) {
+  
+    left: 100%;
+    transition: .8s;
+
+}
+.btn-1 span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, $orange-color);
+
+}
+.btn-1:hover span:nth-child(3) {
+  
+    right: 100%;
+    transition: .8s;
+    transition-delay: .5s;
+
+}
+
+.btn-1 span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, $orange-color);
+
+}
+.btn-1:hover span:nth-child(2) {
+  
+    top: 100%;
+    transition: .8s;
+    transition-delay: .25s;
+
+}
+.btn-1 span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, $orange-color);
+
+}
+
+.btn-1:hover span:nth-child(4) {
+  
+    bottom: 100%;
+    transition: .8s;
+    transition-delay: .75s;
+
+}

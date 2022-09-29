@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <link rel="shortcut icon" href="./icons/favcon-logo.svg" type="image/x-icon"/>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+   
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Mars</title>
+
+</head>
+<body>
+    
+    <!--custom scroll bar-->
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <header id="menu" >
+        <button type="button" id="menu-toggle">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line "></span>  
+            <div id="menu-toggle-label">
+                <span class="word">M<second class="marsLogo-a">A</second>RS</span>
+                <img class="word logoO" src="./icons/marslogo-o.svg" alt="">     
+            </div>
+        </button>
+        <div id="menu-gradient"></div>
+        <div id="menu-gradient-blur"></div>
+        <div id="menu-arcs-wrapper">
+            <svg id="menu-arcs">
+            <circle class="menu-arc" cx="50%" cy="50%" r="18%"></circle>
+            <circle class="menu-arc" cx="50%" cy="50%" r="30%"></circle>
+            <circle class="menu-arc" cx="50%" cy="50%" r="42%"></circle>
+            </svg>
+        </div>
+        <div id="menu-links">
+            <a class="link" href="#" target="_blank">
+            <span class="anchor"></span>  
+            <span class="index">01</span>  
+            <span class="label">Home</span>  
+            </a>
+            <a class="link" href="#" target="_blank">
+            <span class="anchor"></span>  
+            <span class="index">02</span>  
+            <span class="label">Program</span>  
+            </a>
+            <a class="link" href="#" target="_blank">
+            <span class="anchor"></span>  
+            <span class="index">03</span>  
+            <span class="label">Mars</span>  
+            </a>
+            <a class="link" href="#" target="_blank">
+            <span class="anchor"></span>  
+            <span class="index">04</span>  
+            <span class="label">Contact</span>  
+            </a>
+        </div>
+
+            
+    </header >
+
+
+    
+    <main class="hero">
+        <div class="hero-content ">
+            <div class="content flex-item-1">
+                <h1>A world vast <br> beyound imagine</h1>
+                <p class="py-4">Find all the information you need to make a reservation online, everything from port</p>
+    
+                <div class="btn">
+                    <a class="btn-1" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Reserved
+                    </a>
+                </div>
+            </div>
+        </div>
+
+       <div class="countdown-contain pr-2">
+            <div class="countdown-el days">
+                <span class="text" id="days">0</span>
+                <span>days</span>
+            </div>
+            <div class="countdown-el hours">
+                <span class="text" id="hours">0</span>
+                <span>hours</span>
+            </div>
+            <div class="countdown-el mins">
+                <span class="text" id="mins">0</span>
+                <span>minutes</span>
+            </div>
+            <div class="countdown-el seconds">
+                <span class="text" id="seconds">0</span>
+                <span>seconds</span>
+            </div>
+          
+           
+       </div>
+    
+    </main>
+
+    <section class="section-program ">
+        <div class="program-body">
+            <h2>Our <br> Program</h2>
+            <h3 class="py-2">Trip to mars</h3>
+            <p>
+                “You want to wake up in the morning and think the future is going to be great - and 
+                that´s whta being a spacefaring civilization is all about. It´s about believing in 
+                the future and thinking that the future will be better than the past".
+            </p>
+           
+        </div>
+
+
+       
+        <div id="cards" class=" mt-6">
+
+            <div class="card">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-img"><img src="./images/card-img1.jpg" alt=""></div>
+
+                    <div class="card-text">
+                        <div class="card-title">
+                            <img class="card-icons" src="./icons/earth-icon.svg" alt="">
+                            <div >Earth</div>
+                        </div>
+                        <p class="my-2">With earth ascension, marsship  once it lands on mars, there is no way back.</p>
+                        <a href="#" class="card-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-img"><img src="./images/card-img2.jpg" alt=""></div>
+                    
+                    <div class="card-text">
+                        <div class="card-title">
+                            <img class="card-icons" src="./icons/orbit-icon.svg" alt="">
+                            <div >Landing on mars</div>
+                        </div>
+                        <p class="my-2">Marsship will enter mars atmosphere t 7,5 kilometer per second.</p>
+                        <a href="#" class="card-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-img"><img src="./images/card-img3.jpg" alt=""></div>
+                    
+                    <div class="card-text">
+                        <div class="card-title">
+                            <img class="card-icons" src="./icons/base-icon.svg" alt="">
+                            <div >Bases colony</div>
+                        </div>
+                        <p class="my-2">Bases will be installed, in an average of 2 to 3 months for fully, with the colony project.</p>
+                        <a href="#" class="card-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-img"><img src="./images/card-img4.jpg" alt=""></div>
+                    
+                    <div class="card-text">
+                        <div class="card-title">
+                            <img class="card-icons" src="./icons/colony-icon.svg" alt="">
+                            <div >Colony project</div>
+                        </div>
+                        <p class="my-2">The colony project is man's most ambitious. With ultra-sophisticated facilities.</p>
+                        <a href="#" class="card-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-img"><img src="./images/card-img5.jpg" alt=""></div>
+                    
+                    <div class="card-text">
+                        <div class="card-title">
+                            <img class="card-icons" src="./icons/astronaut-icon.svg" alt="">
+                            <div >Space suit</div>
+                        </div>
+                        <p class="my-2">Spacesuits will be fully prepared for any and all situations.</p>
+                        <a href="#" class="card-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <div class="card-img"><img src="./images/card-img-6.jpg" alt=""></div>
+                    
+                    <div class="card-text">
+                        <div class="card-title">
+                            <img class="card-icons" src="./icons/energy-icon.svg" alt="">
+                            <div >Energy</div>
+                        </div>
+                        <p class="my-2">Energy supplied primarily by the sun with an average duration of 72 hours.</p>
+                        <a href="#" class="card-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>  
+
+         <!-- Swiper -->
+        <div class="swiper mySwiper mt-6">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-content--mobile">
+                        <div class="card-img--mobile"><img src="./images/card-img1.jpg" alt=""></div>
+    
+                        <div class="card-text--mobile mt-5">
+                            <div class="card-title--mobile">
+                                <img class="card-icons--mobile mr-3" src="./icons/earth-icon.svg" alt="">
+                                <div >Earth</div>
+                            </div>
+                            <p class="my-4">With earth ascension, marsship  once it lands on mars, there is no way back.</p>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content--mobile">
+                        <div class="card-img--mobile"><img src="./images/card-img2.jpg" alt=""></div>
+    
+                        <div class="card-text--mobile mt-5">
+                            <div class="card-title--mobile">
+                                <img class="card-icons--mobile mr-3" src="./icons/orbit-icon.svg" alt="">
+                                <div>Landing on mars</div>
+                            </div>
+                            <p class="my-4">Marsship will enter mars atmosphere t 7,5 kilometer per second.</p>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content--mobile">
+                        <div class="card-img--mobile"><img src="./images/card-img3.jpg" alt=""></div>
+    
+                        <div class="card-text--mobile mt-5">
+                            <div class="card-title--mobile">
+                                <img class="card-icons--mobile mr-3" src="./icons/base-icon.svg" alt="">
+                                <div >Bases colony</div>
+                            </div>
+                            <p class="my-4">Bases will be installed, in an average of 2 to 3 months for fully, with the colony project</p>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content--mobile">
+                        <div class="card-img--mobile"><img src="./images/card-img4.jpg" alt=""></div>
+    
+                        <div class="card-text--mobile mt-5">
+                            <div class="card-title--mobile">
+                                <img class="card-icons--mobile mr-3" src="./icons/earth-icon.svg" alt="">
+                                <div >Colony project</div>
+                            </div>
+                            <p class="my-4">The colony project is man's most ambitious. With ultra-sophisticated facilities.</p>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content--mobile">
+                        <div class="card-img--mobile"><img src="./images/card-img5.jpg" alt=""></div>
+    
+                        <div class="card-text--mobile mt-5">
+                            <div class="card-title--mobile">
+                                <img class="card-icons--mobile mr-3" src="./icons/astronaut-icon.svg" alt="">
+                                <div >Space suit</div>
+                            </div>
+                            <p class="my-4">Spacesuits will be fully prepared for any and all situations.</p>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content--mobile">
+                        <div class="card-img--mobile"><img src="./images/card-img-6.jpg" alt=""></div>
+    
+                        <div class="card-text--mobile mt-5">
+                            <div class="card-title--mobile">
+                                <img class="card-icons--mobile mr-3" src="./icons/energy-icon.svg" alt="">
+                                <div >Energy</div>
+                            </div>
+                            <p class="my-4">Energy supplied primarily by the sun with an average duration of 72 hours.</p>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-button-next next"></div>
+            <div class="swiper-button-prev prev"></div>
+        </div>
+      
+    </section>
+
+
+    <section class=" discover-section">
+        <div >
+            <svg width="636" height="856" viewBox="0 0 636 856" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="map">
+                <path id="Vector 842" d="M23.4998 572.5L502 481.715" stroke="#A2A2A5" stroke-opacity="0.43" stroke-width="1.00314"/>
+                <path id="Vector 840" d="M585 1L303 326.5" stroke="#A2A2A5" stroke-opacity="0.43"/>
+                <path id="Vector 841" d="M384 133L623.5 842.5" stroke="url(#paint0_linear_286_197)" stroke-opacity="0.43"/>
+                <g id="map-square-1" filter="url(#filter0_d_286_197)">
+                <g id="rect-map-2" filter="url(#filter1_d_286_197)">
+                <rect x="413.213" y="200.893" width="10.2717" height="10.2717" transform="rotate(85.684 413.213 200.893)" fill="#E5643C"/>
+                </g>
+                <rect id="rect-map-1" x="416.475" y="196.947" width="17.578" height="17.578" transform="rotate(85.684 416.475 196.947)" stroke="#E5643C" stroke-width="0.413601"/>
+                </g>
+                <g id="map-square-2" filter="url(#filter2_d_286_197)">
+                <g id="rect-map2-2" filter="url(#filter3_d_286_197)">
+                <rect x="22.3376" y="565.15" width="10.2717" height="10.2717" transform="rotate(35.9839 22.3376 565.15)" fill="#E5643C"/>
+                </g>
+                <rect id="rect-map2-1" x="21.4382" y="560.11" width="17.578" height="17.578" transform="rotate(35.9839 21.4382 560.11)" stroke="#E5643C" stroke-width="0.413601"/>
+                </g>
+                <g id="square-2">
+                <rect id="Rectangle-4" x="508.422" y="478.433" width="10.2717" height="10.2717" transform="rotate(118.848 508.422 478.433)" fill="white"/>
+                <rect id="Rectangle-3" x="513.311" y="476.915" width="17.578" height="17.578" transform="rotate(118.848 513.311 476.915)" stroke="white" stroke-width="0.413601"/>
+                </g>
+                <g id="square-2_2">
+                <rect id="Rectangle-4_2" x="308.229" y="321.908" width="10.2717" height="10.2717" transform="rotate(85.8593 308.229 321.908)" fill="white"/>
+                <rect id="Rectangle-3_2" x="311.504" y="317.972" width="17.578" height="17.578" transform="rotate(85.8593 311.504 317.972)" stroke="white" stroke-width="0.413601"/>
+                </g>
+                <g id="square-2_3">
+                <rect id="Rectangle-4_3" x="630.397" y="841.346" width="10.2717" height="10.2717" transform="rotate(118.135 630.397 841.346)" fill="white"/>
+                <rect id="Rectangle-3_3" x="635.267" y="839.766" width="17.578" height="17.578" transform="rotate(118.135 635.267 839.766)" stroke="white" stroke-width="0.413601"/>
+                </g>
+                </g>
+                <defs>
+                <filter id="filter0_d_286_197" x="394.725" y="196.725" width="27.2947" height="27.2947" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_286_197"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_286_197" result="shape"/>
+                </filter>
+                <filter id="filter1_d_286_197" x="386.97" y="184.893" width="43.0154" height="43.0156" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset/>
+                <feGaussianBlur stdDeviation="8"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.9 0 0 0 0 0.39384 0 0 0 0 0.234 0 0 0 0.86 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_286_197"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_286_197" result="shape"/>
+                </filter>
+                <filter id="filter2_d_286_197" x="6.82129" y="559.821" width="33.1296" height="33.1296" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_286_197"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_286_197" result="shape"/>
+                </filter>
+                <filter id="filter3_d_286_197" x="0.30249" y="549.15" width="46.3467" height="46.3469" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset/>
+                <feGaussianBlur stdDeviation="8"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.9 0 0 0 0 0.39384 0 0 0 0 0.234 0 0 0 0.86 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_286_197"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_286_197" result="shape"/>
+                </filter>
+                <linearGradient id="paint0_linear_286_197" x1="371.5" y1="30.5" x2="623" y2="849" gradientUnits="userSpaceOnUse">
+                <stop offset="0.1125" stop-color="#A2A2A5" stop-opacity="0"/>
+                <stop offset="0.445833" stop-color="#A2A2A5"/>
+                </linearGradient>
+                </defs>
+            </svg>
+                
+                
+                
+                
+        </div>
+        <div class="program-body">
+            <h2>discover<br>to planet mars </h2>
+            <h3 class="py-2">The red planet</h3>
+            <p>
+                A little planet with great misteryous.
+            </p>
+           
+        </div>
+
+
+
+        <div class="discover-body ">
+            <div class="flex-item-1 slides-mars ">
+                
+                <div class="bg-slide ">
+                    <img class="slides-img"  src="./images/ellipse-slide1.png" alt="">
+                    <img class="slides-img" src="./images/ellipse-slide2.png" alt="">
+                    <img class="slides-img" src="./images/ellipse-slide3.png" alt="">
+                    <img class="slides-img"  src="./images/ellipse-slide4.png" alt="">
+                </div>
+                    
+                
+                <div class="dots-slide">
+                    <img class="dots-img" id="0" src="./images/ellipse-slide1.png" alt="">
+                    <img class="dots-img"  id="1" src="./images/ellipse-slide2.png" alt="">
+                    <img class="dots-img" id="2" src="./images/ellipse-slide3.png" alt="">
+                    <img class="dots-img"  id="3"src="./images/ellipse-slide4.png" alt="">
+                </div>
+            </div>
+
+            <div class="flex-item-1 info-mars ">
+                <div class="title-info">
+                    <div >
+                        <strong>Mars</strong> - 
+                        <span>The red planet</span>
+                    </div>
+                    <div class="text-info py-2">
+                        <p>Mars is the fourth planet from the Sun, the second smallest in the Solar System. Named after the Roman god of war, it is often described as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance.</p>
+                    </div>
+
+                    <div class="datas-info">
+                        <div class="datas ">
+                            <div class="data-title">Distance from earth:</div>
+                            <div class="data-info">255,069,570 <span>km</span></div>
+                        </div>
+                        
+                        <div class="datas">
+                            <div class="data-title">Distance from sun:</div>
+                            <div class="data-info">255,069,570 <span>km</span></div>
+                        </div>
+
+                        <div class="datas">
+                            <div class="data-title">Day duration:</div>
+                            <div class="data-info">1d 0h 37m</div>
+                        </div>
+
+                        <div class="datas">
+                            <div class="data-title">Rating:</div>
+                            <img src="./icons/star-2.svg" alt="">
+                            <div class="data-info">4,8</div>
+                        </div>
+                    </div>
+                    
+                    <div class="btn mt-6">
+                        <a class="btn-1" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Reserved
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+
+
+
+
+    <section class="section-travel">
+        <div class="how-much">
+            <div class="hm-content">
+                <div class="hm-title">
+                    <h2>HOW MUCH TIME ?</h2>
+                    <h3 class="pt-2">from earh to mars</h3>
+                </div>
+               
+    
+                <div class="hm-info mt-6">
+                    <div class="hm-info-content">
+                        <div>07</div>
+                        <span>months trip to mars</span>
+                    </div>
+                    <div class="hm-info-content">
+                        <div>02</div>
+                        <span>years living on mars</span>
+                    </div>
+                    <div class="hm-info-content">
+                        <div>09</div>
+                        <span>months back to earth</span>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="spaceship">
+                <img src="./images/spaceship.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section-balls mt-6">
+        <div class="balls">
+            <div class="ball-1"></div>
+            <div class="ball-2"></div>
+        </div>
+        
+    </section>
+    
+  
+    <section class="section-contact">
+        <svg width="1372" height="1372" viewBox="0 0 1372 1372" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="g-eclipse">
+            <g id="eclipse-2">
+            <circle id="Ellipse 331" cx="686" cy="686" r="472.582" stroke="#E5643C" stroke-width="2.07273" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.26 25.91"/>
+            <g id="square-2">
+            <g id="Rectangle-4" filter="url(#filter0_d_286_150)">
+            <rect x="987.857" y="311.535" width="10.2717" height="10.2717" transform="rotate(85.8593 987.857 311.535)" fill="#E5643C"/>
+            </g>
+            <rect id="Rectangle-3" x="991.131" y="307.599" width="17.578" height="17.578" transform="rotate(85.8593 991.131 307.599)" stroke="#E5643C" stroke-width="0.413601"/>
+            </g>
+            </g>
+            <g id="eclipse-1">
+            <circle id="eclipse-1_2" cx="686" cy="686" r="684" stroke="white" stroke-width="2.07273" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.26 25.91"/>
+            <g id="square">
+            <g id="Rectangle-2" filter="url(#filter1_d_286_150)">
+            <rect x="1327.93" y="427.666" width="10.2717" height="10.2717" transform="rotate(115.604 1327.93 427.666)" fill="white"/>
+            </g>
+            <rect id="Rectangle-1" x="1332.84" y="425.831" width="17.7517" height="17.7517" transform="rotate(115.604 1332.84 425.831)" stroke="white" stroke-width="0.23994"/>
+            </g>
+            </g>
+            </g>
+            <defs>
+            <filter id="filter0_d_286_150" x="966.612" y="300.535" width="32.9866" height="32.9866" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_286_150"/>
+            <feOffset/>
+            <feGaussianBlur stdDeviation="5"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.898039 0 0 0 0 0.392157 0 0 0 0 0.235294 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_286_150"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_286_150" result="shape"/>
+            </filter>
+            <filter id="filter1_d_286_150" x="1306.23" y="415.227" width="29.7019" height="29.7019" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset/>
+            <feGaussianBlur stdDeviation="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_286_150"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_286_150" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+        
+        <div class="contact-us">
+            <h2>contact us</h2>
+            <h3 class="py-2">visitmars.com</h3>
+            <p>Take your doubts, contact us and we will answer you as soon as possible.</p>
+            
+        </div>
+        <div>
+            <form action="#">
+                <div class="inputbox">
+                    <input type="text" required="required">
+                    <span>Text your name here</span>
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input type="email" required="required">
+                    <span>Text your email here</span>
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required="required">
+                    <span>Message</span>
+                    <i></i>
+                </div>
+
+                
+                <button type="submit" class="btn sub-btn">
+                    <a class="btn-1" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Submit
+                    </a>
+                </button type="submit">
+
+            </form>
+            
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+      
+            
+            
+        <div>
+            <div class="logo-footer">
+                <span class="word-f">M<second class="logof-a">A</second>RS</span>
+                <img class="marsLogo" src="./icons/marslogo-o.svg" alt=""> 
+                    
+            </div>
+             
+        </div>
+
+        <p class="py-3">A world vast beyound imagine</p>
+        
+        <div class="btn">
+            <a class="btn-1" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Reserved
+            </a>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

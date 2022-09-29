@@ -1,0 +1,121 @@
+@keyframes ball-1 {
+    0% {
+        top: 10%;
+        left: 30%;
+      }
+
+    50% {
+        top: 50%;
+        left: 40%;
+    }
+
+    100% {
+        top: 30%;
+        left: 60%;
+    }
+}
+
+
+@keyframes ball-2 {
+    0% {
+        left:50%;
+        top: 45%;
+        
+        
+    }
+    50% {
+      top: 50%;
+      left: 40%;
+      transform: rotate(90deg);
+      
+    }
+    100% {
+      top: 10%;
+      left: 40%;
+      transform: rotate(180deg);
+    }
+}
+
+
+@keyframes rect-pulse {
+  from{
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+#rect-map-2,
+#rect-map2-2 {
+  animation: rect-pulse 2s ease infinite alternate;
+}
+
+
+@keyframes eclipse-rptate1 {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes eclipse-rptate2 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#eclipse-1 {
+  transform-box: fill-mode;
+  transform-origin: center center;
+  animation: eclipse-rptate1 200s ease infinite ;
+}
+#eclipse-2 {
+  transform-box: fill-mode;
+  transform-origin: center center;
+  animation: eclipse-rptate2 100s ease infinite;
+}
+
+#Rectangle-4,
+#Rectangle-2 {
+  animation: rect-pulse 2s ease infinite alternate;
+}
+
+
+@keyframes star-pulse {
+  to {
+    opacity: 0;
+  }
+
+  from {
+    opacity: 1;
+  }
+}
+
+#star-1 {
+  animation: star-pulse 4s ease infinite alternate;
+}
+
+#star-2 {
+  animation: star-pulse 1s ease infinite alternate;
+}
+#star-3 {
+  animation: star-pulse 3s ease infinite alternate;
+}
+#star-4 {
+  animation: star-pulse 4s ease infinite alternate;
+}
+#star-5 {
+  animation: star-pulse 2s ease infinite alternate;
+}
+#star-6 {
+  animation: star-pulse 4s ease infinite alternate;
+}
